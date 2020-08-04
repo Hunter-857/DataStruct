@@ -13,7 +13,6 @@ public class FileRecursive {
         int fileNum = 0, folderNum = 0;
         File fileReadIn = new File(path);
         LinkedList<File> list = new LinkedList<>();
-
         if (fileReadIn.exists()) {
             if (null != fileReadIn.listFiles()) {//get all of the files under that file.
                 list.addAll(Arrays.asList(fileReadIn.listFiles()));
@@ -39,6 +38,9 @@ public class FileRecursive {
         }
         System.out.println("文件夹数量:" + folderNum + ",文件数量:" + fileNum);
     }
+
+
+
     /*
     * Recursive
     * */
