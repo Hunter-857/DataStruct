@@ -1,5 +1,7 @@
 package com.hdsfa.leetcode;
 
+import org.junit.Test;
+
 public class Solution {
 
     /*
@@ -58,10 +60,37 @@ public class Solution {
         return -1;
     }
 
+    public int pivotIndex(int[] nums) {
+        if(nums.length == 0){
+            return -1;
+        }
+        int preSum = nums[0];
+        int result = -1;
+        for (int j = 1; j < nums.length-1; j++) {
+           preSum += nums[j];
+           int endSum = nums[j+1];
+           for (int i = j+1; i <nums.length-j ; i++) {
+               endSum += nums[i+1];
+               if(preSum == endSum){
+                    result = i;
+               }else if(preSum > endSum){
+                   break;
+               }
+           }
+        }
+        return result;
+    }
 
-
-    public static void main(String[] args) {
+    @Test
+    public  void solutions() {
         int[] nums = {0, 2, 3, 4, 5};
         System.out.println(findMagicIndex2(nums));
+        int[] number1= {1, 2, 3};
+        int[] number2= {1, 7, 3, 6, 5, 6}; //3
+                      //[1,7,3,6,5,6]
+        int[] number3= {-1,-1,-1,-1,-1,-1};
+        int[] number4= {-1,-1,-1,0,1,1};//0
+        int[] number5= {-1,-1,0,1,1,0};//5
+
     }
 }

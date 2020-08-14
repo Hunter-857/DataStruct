@@ -10,7 +10,7 @@ public class Solution76 {
     Map<Character, Integer> cnt = new HashMap<Character, Integer>();
 
     /**
-     *  滑动窗口算法
+     *  哈希表 + 滑动窗口
      * @param s
      * @param t
      * @return
