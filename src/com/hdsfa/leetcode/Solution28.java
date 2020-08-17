@@ -7,7 +7,7 @@ public class Solution28 {
     *   1.暴力匹配
     *       执行用时 :1 ms, 在所有 Java 提交中击败了78.39% 的用户
     *       内存消耗 :43 MB, 在所有 Java 提交中击败了5.02%的用户
-    *   行能太差啦 哈哈
+    *      行能太差啦 哈哈
     *
     * */
     public static int strStr(String haystack, String needle) {
