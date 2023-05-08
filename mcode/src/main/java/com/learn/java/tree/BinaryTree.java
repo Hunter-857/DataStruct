@@ -1,6 +1,6 @@
 package com.learn.java.tree;
 
-import org.junit.Test;
+
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -129,7 +129,7 @@ public class BinaryTree {
         }
         return res;
     }
-    @Test
+
     public void testSolution(){ TreeNode root = new TreeNode(1);
         TreeNode right = new TreeNode(2);
         TreeNode third = new TreeNode(3);
